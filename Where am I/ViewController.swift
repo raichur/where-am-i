@@ -45,7 +45,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             if error != nil { println(error) }
             else {
                 let p = CLPlacemark(placemark: placemarks?[0] as CLPlacemark)
-                self.address.text = "\(p.subThoroughfare) \(p.thoroughfare)"
+                
+                var subThoroughfare : String
+                
+                if (p.subThoroughfare != nil) {
+                    subThoroughfare = p.subThoroughfare
+                } else {
+                    subThoroughfare = ""
+                }
+                
+                self.address.text = "\(subThoroughfare) \(p.thoroughfare) \n \(p.subLocality) \n \(p.subAdministrativeArea) \n \(p.postalCode) \(p.country)"
                 
             }
         })

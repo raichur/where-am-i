@@ -409,6 +409,7 @@
 				034F103D1AC2C4D400E8629C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		034F103E1AC2C4D400E8629C /* Build configuration list for PBXNativeTarget "Where am ITests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				034F10401AC2C4D400E8629C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
